@@ -49,12 +49,7 @@ struct SearchReceipts: View{
                             arrStrToApi.append(newValue.name)
                             print(arrStrToApi)
                         } else{
-                            for i in 0...arrStrToApi.count - 1{
-                                print(arrStrToApi)
-                                if(arrStrToApi[i] == newValue.name){
-                                    arrStrToApi.remove(at: i)
-                                }
-                            }
+                            arrStrToApi.remove(at: arrStrToApi.firstIndex(of: newValue.name) ?? 0)
                         }
                         var strApi: String = ""
                         if !arrStrToApi.isEmpty{
