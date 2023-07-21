@@ -79,9 +79,9 @@ struct SearchReceipts: View{
                     }
                 }
         }.navigationTitle("Поиск рецепта")
-    }
+    }.preferredColorScheme(.light)
     
-}
+    }
 }
 
 struct ReceiptsFromDifContry: View{
